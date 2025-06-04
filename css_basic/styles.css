@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+    height: auto;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    flex-wrap: nowrap;
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+article, aside {
+    overflow-y: auto;
+    min-width: 0;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+header {
+  height: auto;
+}
+
+header ul li a {
+  box-shadow: inset 0 -2px 0 transparent;
+  transition: box-shadow 0.3s;
+}
+
+header ul li a:hover {
+  box-shadow: inset 0 -2px 0 rgb(59, 61, 59);
+}
