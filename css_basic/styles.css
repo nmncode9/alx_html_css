@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    /* row-gap: 20px; */
     height: auto;
 }
 
@@ -46,19 +45,36 @@ header ul li a:hover {
   box-shadow: inset 0 -2px 0 rgb(59, 61, 59);
 }
 
+header ul {
+  max-width: 100%;
+  margin: 26px auto;
+}
+
 @media (max-width: 1174px) {
   header ul li {
   	display: block;
   }
   header ul {
   	max-width: 100%;
-    margin: 0 auto;
+    margin: 26px auto;
     text-align: center;
   }
   header h1 {
   	text-align: center;
   }
   header ul li:last-child {
-  	margin-top: 26px;
+  	margin: 26px 0;
   }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-size: 56px !important;
+  padding: 48px 0 !important;
+  height: 120px;
+  
 }
