@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Light init */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Utility classes */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding: 0 5.625rem;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+}
+
+.purple-bold {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.purple {
+    color: #C271FF;
+}
+
+.gray {
+    color: #D8D8D8;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+/* hero header */
+
+.hero {
+    color: white;
+    background: url('./images/background.png') center/cover no-repeat;
+    padding-top: 2.25rem;
+    padding-bottom: 6.12rem;
+}
+
+.hero__header, .hero__section {
+    background: transparent;
+}
+
+.hero__header nav ul li a {
+    color: inherit;
+}
+
+.hero__header nav ul {
+    gap: 3.31rem;
+}
+
+/* hero section */
+
+.hero__section h1 {
+    margin-top: 9.75rem;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.hero__section ul {
+    gap: 3.75rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+button.cta {
+    background-color: #C271FF;
+    border-radius: 50px;
+    padding: 8px 28px;
+    font-weight:500;
+    color: white;
+    display: block;
+    max-width: 100%;
+    margin: 2.38rem auto;
+}
+
+.hero__section button.cta {
+    border: 0px solid #979797;
+    filter: drop-shadow(0px 2px 20px rgba(0,0,0, 0.5)); 
+}
+
+.hero__section .hero__section__pros {
+    margin-top: 10.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.hero__section__pros .hero__section__avatars {
+    justify-content: space-around;
+    margin-top: 5.43rem;
+    padding: 0 4rem;
+    flex-wrap: wrap;
+}
+
+.hero__section__pros .hero__section__avatars div {
+    max-width: 150px;
+}
+
+.hero__section__avatars div h3 {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: 0.625rem;
+}
+
+.hero__section__avatars div p {
+    font-style: italic;
+}
+
+/* Testimonials */
+
+.testimonials {
+    align-items: center;
+    gap: 3.3125rem;
+    background-color: #C271FF;
+    padding: 6.75rem 14.8125rem 7.75rem 16.25rem;
+    color: white;
+    font-size: 1.375rem
+}
+
+.testimonials .testimonials__avatar {
+    height: 100%;
+    min-width: 160px;
+}
+
+.testimonials__avatar img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.testimonials .testimonials__copy p, .testimonials .testimonials__copy blockquote {
+    font-weight: 300;
+}
+
+.testimonials .testimonials__copy blockquote {
+    margin-bottom: 1.375rem;
+}
+
+.testimonials .testimonials__copy h3 {
+    font-size: inherit;
+}
+
+.testimonials .testimonials__copy p {
+    font-style: italic;
+}
+
+/* Tutorial previews */
+
+.tutorials {
+    padding: 5.43rem 6.625rem
+}
+
+.tutorials__preview__wrapper {
+    position: relative;
+}
+
+.tutorials__preview__wrapper::after {
+    content: "";
+    background: url('./images/play.png') no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.tutorials h2 {
+    margin-bottom: 4.68rem;
+}
+
+.tutorials .tutorials__previews .tutorials__preview {
+    max-width: 255px;
+}
+
+.tutorials .tutorials__previews {
+    justify-content: space-around;
+}
+
+.tutorials__previews .tutorials__preview .tutorials__preview__copy {
+    padding: 1.125rem 0.8125rem;
+}
+
+.tutorials__preview .tutorials__preview__copy h3 {
+    margin-bottom: 0.5rem;
+}
+
+.tutorials__preview__copy .tutorials__preview__avatar h4 {
+    margin-left: 0.8125rem;
+}
+
+.tutorials__preview__copy .tutorials__preview__avatar {
+    align-items: center;
+    margin: 0.9rem 0;
+}
+
+/* Membership section */ 
+
+.membership {
+    color: white;
+    background-color: #071629;
+    padding: 4.375rem 10.25rem 4.375rem 10.25rem;
+    /* padding-top: 4.375rem;
+    padding-bottom: 3.25rem; */
+    
+}
+
+.membership h2 {
+    margin-bottom: 3.625rem;
+}
+
+.membership .membership__smiles {
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.membership .membership__smiles .membership__smiles__cards {
+    max-width: 16.06rem;
+    padding: 1.40rem;
+}
+
+.membership__smiles .membership__smiles__cards img {
+    margin: 0 auto 1.625rem auto;
+}
+
+.membership__smiles .membership__smiles__cards h3 {
+    margin-bottom: 0.8125rem;
+}
+
+.membership__smiles .membership__smiles__cards p {
+    font-weight: 300;
+}
+
+.membership button.cta {
+    margin-top: 5.31rem;
+}
+
+/* F.A.Q */
+
+.faq {
+    padding: 4.18rem 6.625rem 5.25rem 5.3125rem;
+}
+
+.faq h2 {
+    font-size: 3.75rem;
+    margin-bottom: 4.625rem;
+}
+
+.faq__container {
+    flex-wrap: wrap;
+    column-gap: 13.75rem;
+    row-gap: 4.625rem;
+    justify-content: center;
+}
+
+.faq__container .faq__container__copy {
+    max-width: 21.875rem;
+}
+
+.faq__container .faq__container__copy h3 {
+    margin-bottom: 1.875rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    background-color: #071629;
+    padding: 5.94rem 0 2.5rem 0;
+    color: white;
+}
+
+footer p.center {
+    margin-top: 4.375rem;
+    color: rgba(255, 255, 255, 0.3517);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.social-icons .fa-brands {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    color: #071629;
+    height: 1.875rem;
+    width: 1.875rem;
+    text-align: center;
+    line-height: 1.3;
+}
