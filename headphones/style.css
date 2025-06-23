@@ -79,6 +79,15 @@ button {
   
 }
 
+.header__nav a {
+  transition: color 200ms ease-in-out;
+}
+
+.header__nav a:hover,
+.header__nav a:active {
+  color: #FF6565;
+}
+
 .header__nav ul {
   gap: 2.5625em;
 }
