@@ -80,7 +80,7 @@ button {
 }
 
 .header__nav ul {
-  gap: 2.5em;
+  gap: 2.5625em;
 }
 
 .header__nav {
@@ -113,6 +113,7 @@ button {
   margin: 0 auto;
   padding: 1em 2em;
   border-radius: 30px;
+  color: white;
 }
 
 .cta-btn--shadow {
@@ -125,7 +126,6 @@ button {
   font-size: 1rem;
   font-weight: 400;
   max-width: 637px;
-  min-width: 335px;
   margin: 0 auto;
 }
 
@@ -154,6 +154,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   column-gap: 3rem;
+  row-gap: 6rem;
+  justify-content: center;
   
 }
 
@@ -165,6 +167,7 @@ button {
   align-content: flex-end;
   max-width: 207px;
   padding-inline: 0.825rem;
+  flex: 0 1 100%;
 }
 
 .card__copy p {
@@ -215,6 +218,7 @@ button {
 
 .results__kpi {
   display: flex;
+  gap: 2.625rem 4.75rem;
   justify-content: space-around;
   max-width: 1000px;
   margin: 0 auto;
@@ -223,8 +227,10 @@ button {
 
 .results__kpi .kpi {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  width: 11.87rem;
-  height: 11.87rem;
+  width: 10rem;
+  height: 10rem;
+  min-width: 190px;
+  min-height: 190px;
   aspect-ratio: 1 / 1;
   background-color: #FF6565;
   text-align: center;
@@ -232,11 +238,13 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 0 1 auto;
+  
 }
 
 .kpi h3 {
   font-size: 2.875rem;
-  margin-top: 2.28rem;
+  margin-top: 1.2rem;
 }
 
 .kpi p {
@@ -329,4 +337,38 @@ button {
 .footer p {
   font-size: 0.75rem;
   color: hsla(0, 0%, 100%, 0.375);
+}
+
+
+/*--------------------*\
+ #Media queries
+\*--------------------*/
+
+@media (max-width: 575px) {
+  .header__nav {
+    display: none;
+  }
+
+  .hero__header {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero,
+  .results {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.8125rem;
+  }
+
+  .social-icons {
+    margin-left: 0;
+    margin-top: 2.8125rem;
+  }
 }
